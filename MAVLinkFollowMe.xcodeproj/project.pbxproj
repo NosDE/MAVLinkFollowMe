@@ -1,0 +1,1040 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A907C0D81905569A00BB5819 /* apm.png in Resources */ = {isa = PBXBuildFile; fileRef = A907C0D61905569A00BB5819 /* apm.png */; };
+		A907C0D91905569A00BB5819 /* px4.png in Resources */ = {isa = PBXBuildFile; fileRef = A907C0D71905569A00BB5819 /* px4.png */; };
+		A9113E3418F955B60082FFFC /* FollowMEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9113E3318F955B60082FFFC /* FollowMEViewController.m */; };
+		A916A29818FC693000702545 /* MAV.m in Sources */ = {isa = PBXBuildFile; fileRef = A916A29718FC693000702545 /* MAV.m */; };
+		A9285CEF18F87E49007210B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9285CEE18F87E49007210B8 /* Foundation.framework */; };
+		A9285CF118F87E49007210B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9285CF018F87E49007210B8 /* CoreGraphics.framework */; };
+		A9285CF318F87E49007210B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9285CF218F87E49007210B8 /* UIKit.framework */; };
+		A9285CF918F87E49007210B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9285CF718F87E49007210B8 /* InfoPlist.strings */; };
+		A9285CFB18F87E49007210B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9285CFA18F87E49007210B8 /* main.m */; };
+		A9285CFF18F87E49007210B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9285CFE18F87E49007210B8 /* AppDelegate.m */; };
+		A9285D0218F87E49007210B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9285D0018F87E49007210B8 /* Main.storyboard */; };
+		A9285D0A18F87E49007210B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9285D0918F87E49007210B8 /* Images.xcassets */; };
+		A9285D1118F87E4A007210B8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9285D1018F87E4A007210B8 /* XCTest.framework */; };
+		A9285D1218F87E4A007210B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9285CEE18F87E49007210B8 /* Foundation.framework */; };
+		A9285D1318F87E4A007210B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9285CF218F87E49007210B8 /* UIKit.framework */; };
+		A9285D1B18F87E4A007210B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9285D1918F87E4A007210B8 /* InfoPlist.strings */; };
+		A9285D1D18F87E4A007210B8 /* MAVLinkFollowMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9285D1C18F87E4A007210B8 /* MAVLinkFollowMeTests.m */; };
+		A9285D2718F87E58007210B8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9285D2618F87E58007210B8 /* CFNetwork.framework */; };
+		A9285D2918F87E62007210B8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9285D2818F87E62007210B8 /* CoreLocation.framework */; };
+		A9285D2B18F87E6A007210B8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9285D2A18F87E6A007210B8 /* CoreMotion.framework */; };
+		A9285D2D18F87E7B007210B8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9285D2C18F87E7B007210B8 /* AVFoundation.framework */; };
+		A9285DE118F87FF1007210B8 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A9285D3118F87FF0007210B8 /* GCDAsyncSocket.m */; };
+		A9285DE218F87FF1007210B8 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A9285D3318F87FF0007210B8 /* GCDAsyncUdpSocket.m */; };
+		A9285DF018F87FFA007210B8 /* led_circle_green.png in Resources */ = {isa = PBXBuildFile; fileRef = A9285DE518F87FFA007210B8 /* led_circle_green.png */; };
+		A9285DF118F87FFA007210B8 /* led_circle_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = A9285DE618F87FFA007210B8 /* led_circle_grey.png */; };
+		A9285DF218F87FFA007210B8 /* led_circle_red.png in Resources */ = {isa = PBXBuildFile; fileRef = A9285DE718F87FFA007210B8 /* led_circle_red.png */; };
+		A9285DF318F87FFA007210B8 /* mavlink.png in Resources */ = {isa = PBXBuildFile; fileRef = A9285DE818F87FFA007210B8 /* mavlink.png */; };
+		A9285DF418F87FFA007210B8 /* mavlink_120.png in Resources */ = {isa = PBXBuildFile; fileRef = A9285DE918F87FFA007210B8 /* mavlink_120.png */; };
+		A9285DF518F87FFA007210B8 /* mavlink_58.png in Resources */ = {isa = PBXBuildFile; fileRef = A9285DEA18F87FFA007210B8 /* mavlink_58.png */; };
+		A9285DF618F87FFA007210B8 /* mavlink_80.png in Resources */ = {isa = PBXBuildFile; fileRef = A9285DEB18F87FFA007210B8 /* mavlink_80.png */; };
+		A9285DFD18F88006007210B8 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9285DFC18F88006007210B8 /* DataModel.m */; };
+		A9285E0018F880A4007210B8 /* PersistentDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A9285DFF18F880A4007210B8 /* PersistentDataStore.m */; };
+		A9286DB41922ADFC003A2A92 /* GPSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A9286DB31922ADFC003A2A92 /* GPSHelper.m */; };
+		A92A45EE1905B8CF00F1617B /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = A92A45EC1905B8CF00F1617B /* 19-gear.png */; };
+		A92A45EF1905B8CF00F1617B /* 28-star.png in Resources */ = {isa = PBXBuildFile; fileRef = A92A45ED1905B8CF00F1617B /* 28-star.png */; };
+		A92A45F21905B9D300F1617B /* MAVHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A92A45F11905B9D300F1617B /* MAVHelper.m */; };
+		A92A45F41905BE8000F1617B /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = A92A45F31905BE8000F1617B /* blank.png */; };
+		A92C33AF19327183001AA9CD /* CalibrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92C33AE19327183001AA9CD /* CalibrationViewController.m */; };
+		A93748F019081803004F7E57 /* px4-ack.aif in Resources */ = {isa = PBXBuildFile; fileRef = A93748EF19081803004F7E57 /* px4-ack.aif */; };
+		A93748F219081812004F7E57 /* px4-boot.aif in Resources */ = {isa = PBXBuildFile; fileRef = A93748F119081812004F7E57 /* px4-boot.aif */; };
+		A9FCA1DA1903F74100E54FFF /* ConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCA1D91903F74100E54FFF /* ConfigurationViewController.m */; };
+		A9FCA1DE1904475D00E54FFF /* MAVTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCA1DC1904475D00E54FFF /* MAVTableViewCell.m */; };
+		A9FCA1DF1904475D00E54FFF /* MAVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FCA1DD1904475D00E54FFF /* MAVTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9285D1418F87E4A007210B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9285CE318F87E49007210B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9285CEA18F87E49007210B8;
+			remoteInfo = MAVLinkFollowMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A907C0D61905569A00BB5819 /* apm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apm.png; sourceTree = "<group>"; };
+		A907C0D71905569A00BB5819 /* px4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = px4.png; sourceTree = "<group>"; };
+		A9113E3218F955B60082FFFC /* FollowMEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowMEViewController.h; sourceTree = "<group>"; };
+		A9113E3318F955B60082FFFC /* FollowMEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowMEViewController.m; sourceTree = "<group>"; };
+		A916A29618FC692F00702545 /* MAV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAV.h; sourceTree = "<group>"; };
+		A916A29718FC693000702545 /* MAV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAV.m; sourceTree = "<group>"; };
+		A9285CEB18F87E49007210B8 /* MAVLinkFollowMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAVLinkFollowMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9285CEE18F87E49007210B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9285CF018F87E49007210B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9285CF218F87E49007210B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9285CF618F87E49007210B8 /* MAVLinkFollowMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MAVLinkFollowMe-Info.plist"; sourceTree = "<group>"; };
+		A9285CF818F87E49007210B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9285CFA18F87E49007210B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9285CFC18F87E49007210B8 /* MAVLinkFollowMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MAVLinkFollowMe-Prefix.pch"; sourceTree = "<group>"; };
+		A9285CFD18F87E49007210B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9285CFE18F87E49007210B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9285D0118F87E49007210B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9285D0918F87E49007210B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9285D0F18F87E4A007210B8 /* MAVLinkFollowMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAVLinkFollowMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9285D1018F87E4A007210B8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A9285D1818F87E4A007210B8 /* MAVLinkFollowMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MAVLinkFollowMeTests-Info.plist"; sourceTree = "<group>"; };
+		A9285D1A18F87E4A007210B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9285D1C18F87E4A007210B8 /* MAVLinkFollowMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAVLinkFollowMeTests.m; sourceTree = "<group>"; };
+		A9285D2618F87E58007210B8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A9285D2818F87E62007210B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A9285D2A18F87E6A007210B8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A9285D2C18F87E7B007210B8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A9285D3018F87FF0007210B8 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		A9285D3118F87FF0007210B8 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		A9285D3218F87FF0007210B8 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		A9285D3318F87FF0007210B8 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		A9285D3718F87FF0007210B8 /* ardupilotmega.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ardupilotmega.h; sourceTree = "<group>"; };
+		A9285D3818F87FF0007210B8 /* mavlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink.h; sourceTree = "<group>"; };
+		A9285D3918F87FF0007210B8 /* mavlink_msg_ahrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_ahrs.h; sourceTree = "<group>"; };
+		A9285D3A18F87FF0007210B8 /* mavlink_msg_ahrs2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_ahrs2.h; sourceTree = "<group>"; };
+		A9285D3B18F87FF0007210B8 /* mavlink_msg_airspeed_autocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_airspeed_autocal.h; sourceTree = "<group>"; };
+		A9285D3C18F87FF0007210B8 /* mavlink_msg_ap_adc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_ap_adc.h; sourceTree = "<group>"; };
+		A9285D3D18F87FF0007210B8 /* mavlink_msg_compassmot_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_compassmot_status.h; sourceTree = "<group>"; };
+		A9285D3E18F87FF0007210B8 /* mavlink_msg_data16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_data16.h; sourceTree = "<group>"; };
+		A9285D3F18F87FF0007210B8 /* mavlink_msg_data32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_data32.h; sourceTree = "<group>"; };
+		A9285D4018F87FF0007210B8 /* mavlink_msg_data64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_data64.h; sourceTree = "<group>"; };
+		A9285D4118F87FF0007210B8 /* mavlink_msg_data96.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_data96.h; sourceTree = "<group>"; };
+		A9285D4218F87FF0007210B8 /* mavlink_msg_digicam_configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_digicam_configure.h; sourceTree = "<group>"; };
+		A9285D4318F87FF0007210B8 /* mavlink_msg_digicam_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_digicam_control.h; sourceTree = "<group>"; };
+		A9285D4418F87FF0007210B8 /* mavlink_msg_fence_fetch_point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_fence_fetch_point.h; sourceTree = "<group>"; };
+		A9285D4518F87FF0007210B8 /* mavlink_msg_fence_point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_fence_point.h; sourceTree = "<group>"; };
+		A9285D4618F87FF0007210B8 /* mavlink_msg_fence_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_fence_status.h; sourceTree = "<group>"; };
+		A9285D4718F87FF0007210B8 /* mavlink_msg_hwstatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hwstatus.h; sourceTree = "<group>"; };
+		A9285D4818F87FF0007210B8 /* mavlink_msg_limits_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_limits_status.h; sourceTree = "<group>"; };
+		A9285D4918F87FF0007210B8 /* mavlink_msg_meminfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_meminfo.h; sourceTree = "<group>"; };
+		A9285D4A18F87FF0007210B8 /* mavlink_msg_mount_configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mount_configure.h; sourceTree = "<group>"; };
+		A9285D4B18F87FF0007210B8 /* mavlink_msg_mount_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mount_control.h; sourceTree = "<group>"; };
+		A9285D4C18F87FF0007210B8 /* mavlink_msg_mount_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mount_status.h; sourceTree = "<group>"; };
+		A9285D4D18F87FF0007210B8 /* mavlink_msg_radio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_radio.h; sourceTree = "<group>"; };
+		A9285D4E18F87FF0007210B8 /* mavlink_msg_rally_fetch_point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_rally_fetch_point.h; sourceTree = "<group>"; };
+		A9285D4F18F87FF0007210B8 /* mavlink_msg_rally_point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_rally_point.h; sourceTree = "<group>"; };
+		A9285D5018F87FF0007210B8 /* mavlink_msg_rangefinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_rangefinder.h; sourceTree = "<group>"; };
+		A9285D5118F87FF0007210B8 /* mavlink_msg_sensor_offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_sensor_offsets.h; sourceTree = "<group>"; };
+		A9285D5218F87FF0007210B8 /* mavlink_msg_set_mag_offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_mag_offsets.h; sourceTree = "<group>"; };
+		A9285D5318F87FF0007210B8 /* mavlink_msg_simstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_simstate.h; sourceTree = "<group>"; };
+		A9285D5418F87FF0007210B8 /* mavlink_msg_wind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_wind.h; sourceTree = "<group>"; };
+		A9285D5518F87FF0007210B8 /* testsuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testsuite.h; sourceTree = "<group>"; };
+		A9285D5618F87FF0007210B8 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		A9285D5718F87FF0007210B8 /* checksum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checksum.h; sourceTree = "<group>"; };
+		A9285D5918F87FF0007210B8 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		A9285D5A18F87FF0007210B8 /* mavlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink.h; sourceTree = "<group>"; };
+		A9285D5B18F87FF0007210B8 /* mavlink_msg_attitude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_attitude.h; sourceTree = "<group>"; };
+		A9285D5C18F87FF0007210B8 /* mavlink_msg_attitude_quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_attitude_quaternion.h; sourceTree = "<group>"; };
+		A9285D5D18F87FF0007210B8 /* mavlink_msg_auth_key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_auth_key.h; sourceTree = "<group>"; };
+		A9285D5E18F87FF0007210B8 /* mavlink_msg_battery_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_battery_status.h; sourceTree = "<group>"; };
+		A9285D5F18F87FF0007210B8 /* mavlink_msg_change_operator_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_change_operator_control.h; sourceTree = "<group>"; };
+		A9285D6018F87FF0007210B8 /* mavlink_msg_change_operator_control_ack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_change_operator_control_ack.h; sourceTree = "<group>"; };
+		A9285D6118F87FF0007210B8 /* mavlink_msg_command_ack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_command_ack.h; sourceTree = "<group>"; };
+		A9285D6218F87FF0007210B8 /* mavlink_msg_command_long.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_command_long.h; sourceTree = "<group>"; };
+		A9285D6318F87FF0007210B8 /* mavlink_msg_data_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_data_stream.h; sourceTree = "<group>"; };
+		A9285D6418F87FF0007210B8 /* mavlink_msg_data_transmission_handshake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_data_transmission_handshake.h; sourceTree = "<group>"; };
+		A9285D6518F87FF0007210B8 /* mavlink_msg_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_debug.h; sourceTree = "<group>"; };
+		A9285D6618F87FF0007210B8 /* mavlink_msg_debug_vect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_debug_vect.h; sourceTree = "<group>"; };
+		A9285D6718F87FF0007210B8 /* mavlink_msg_encapsulated_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_encapsulated_data.h; sourceTree = "<group>"; };
+		A9285D6818F87FF0007210B8 /* mavlink_msg_file_transfer_dir_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_file_transfer_dir_list.h; sourceTree = "<group>"; };
+		A9285D6918F87FF0007210B8 /* mavlink_msg_file_transfer_res.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_file_transfer_res.h; sourceTree = "<group>"; };
+		A9285D6A18F87FF0007210B8 /* mavlink_msg_file_transfer_start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_file_transfer_start.h; sourceTree = "<group>"; };
+		A9285D6B18F87FF1007210B8 /* mavlink_msg_global_position_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_global_position_int.h; sourceTree = "<group>"; };
+		A9285D6C18F87FF1007210B8 /* mavlink_msg_global_position_setpoint_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_global_position_setpoint_int.h; sourceTree = "<group>"; };
+		A9285D6D18F87FF1007210B8 /* mavlink_msg_global_vision_position_estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_global_vision_position_estimate.h; sourceTree = "<group>"; };
+		A9285D6E18F87FF1007210B8 /* mavlink_msg_gps2_raw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_gps2_raw.h; sourceTree = "<group>"; };
+		A9285D6F18F87FF1007210B8 /* mavlink_msg_gps_global_origin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_gps_global_origin.h; sourceTree = "<group>"; };
+		A9285D7018F87FF1007210B8 /* mavlink_msg_gps_inject_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_gps_inject_data.h; sourceTree = "<group>"; };
+		A9285D7118F87FF1007210B8 /* mavlink_msg_gps_raw_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_gps_raw_int.h; sourceTree = "<group>"; };
+		A9285D7218F87FF1007210B8 /* mavlink_msg_gps_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_gps_status.h; sourceTree = "<group>"; };
+		A9285D7318F87FF1007210B8 /* mavlink_msg_heartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_heartbeat.h; sourceTree = "<group>"; };
+		A9285D7418F87FF1007210B8 /* mavlink_msg_highres_imu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_highres_imu.h; sourceTree = "<group>"; };
+		A9285D7518F87FF1007210B8 /* mavlink_msg_hil_controls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hil_controls.h; sourceTree = "<group>"; };
+		A9285D7618F87FF1007210B8 /* mavlink_msg_hil_gps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hil_gps.h; sourceTree = "<group>"; };
+		A9285D7718F87FF1007210B8 /* mavlink_msg_hil_optical_flow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hil_optical_flow.h; sourceTree = "<group>"; };
+		A9285D7818F87FF1007210B8 /* mavlink_msg_hil_rc_inputs_raw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hil_rc_inputs_raw.h; sourceTree = "<group>"; };
+		A9285D7918F87FF1007210B8 /* mavlink_msg_hil_sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hil_sensor.h; sourceTree = "<group>"; };
+		A9285D7A18F87FF1007210B8 /* mavlink_msg_hil_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hil_state.h; sourceTree = "<group>"; };
+		A9285D7B18F87FF1007210B8 /* mavlink_msg_hil_state_quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hil_state_quaternion.h; sourceTree = "<group>"; };
+		A9285D7C18F87FF1007210B8 /* mavlink_msg_local_position_ned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_local_position_ned.h; sourceTree = "<group>"; };
+		A9285D7D18F87FF1007210B8 /* mavlink_msg_local_position_ned_system_global_offset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_local_position_ned_system_global_offset.h; sourceTree = "<group>"; };
+		A9285D7E18F87FF1007210B8 /* mavlink_msg_local_position_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_local_position_setpoint.h; sourceTree = "<group>"; };
+		A9285D7F18F87FF1007210B8 /* mavlink_msg_log_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_data.h; sourceTree = "<group>"; };
+		A9285D8018F87FF1007210B8 /* mavlink_msg_log_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_entry.h; sourceTree = "<group>"; };
+		A9285D8118F87FF1007210B8 /* mavlink_msg_log_erase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_erase.h; sourceTree = "<group>"; };
+		A9285D8218F87FF1007210B8 /* mavlink_msg_log_request_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_request_data.h; sourceTree = "<group>"; };
+		A9285D8318F87FF1007210B8 /* mavlink_msg_log_request_end.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_request_end.h; sourceTree = "<group>"; };
+		A9285D8418F87FF1007210B8 /* mavlink_msg_log_request_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_request_list.h; sourceTree = "<group>"; };
+		A9285D8518F87FF1007210B8 /* mavlink_msg_manual_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_manual_control.h; sourceTree = "<group>"; };
+		A9285D8618F87FF1007210B8 /* mavlink_msg_manual_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_manual_setpoint.h; sourceTree = "<group>"; };
+		A9285D8718F87FF1007210B8 /* mavlink_msg_memory_vect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_memory_vect.h; sourceTree = "<group>"; };
+		A9285D8818F87FF1007210B8 /* mavlink_msg_mission_ack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_ack.h; sourceTree = "<group>"; };
+		A9285D8918F87FF1007210B8 /* mavlink_msg_mission_clear_all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_clear_all.h; sourceTree = "<group>"; };
+		A9285D8A18F87FF1007210B8 /* mavlink_msg_mission_count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_count.h; sourceTree = "<group>"; };
+		A9285D8B18F87FF1007210B8 /* mavlink_msg_mission_current.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_current.h; sourceTree = "<group>"; };
+		A9285D8C18F87FF1007210B8 /* mavlink_msg_mission_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_item.h; sourceTree = "<group>"; };
+		A9285D8D18F87FF1007210B8 /* mavlink_msg_mission_item_reached.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_item_reached.h; sourceTree = "<group>"; };
+		A9285D8E18F87FF1007210B8 /* mavlink_msg_mission_request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_request.h; sourceTree = "<group>"; };
+		A9285D8F18F87FF1007210B8 /* mavlink_msg_mission_request_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_request_list.h; sourceTree = "<group>"; };
+		A9285D9018F87FF1007210B8 /* mavlink_msg_mission_request_partial_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_request_partial_list.h; sourceTree = "<group>"; };
+		A9285D9118F87FF1007210B8 /* mavlink_msg_mission_set_current.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_set_current.h; sourceTree = "<group>"; };
+		A9285D9218F87FF1007210B8 /* mavlink_msg_mission_write_partial_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_write_partial_list.h; sourceTree = "<group>"; };
+		A9285D9318F87FF1007210B8 /* mavlink_msg_named_value_float.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_named_value_float.h; sourceTree = "<group>"; };
+		A9285D9418F87FF1007210B8 /* mavlink_msg_named_value_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_named_value_int.h; sourceTree = "<group>"; };
+		A9285D9518F87FF1007210B8 /* mavlink_msg_nav_controller_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_nav_controller_output.h; sourceTree = "<group>"; };
+		A9285D9618F87FF1007210B8 /* mavlink_msg_omnidirectional_flow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_omnidirectional_flow.h; sourceTree = "<group>"; };
+		A9285D9718F87FF1007210B8 /* mavlink_msg_optical_flow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_optical_flow.h; sourceTree = "<group>"; };
+		A9285D9818F87FF1007210B8 /* mavlink_msg_param_request_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_param_request_list.h; sourceTree = "<group>"; };
+		A9285D9918F87FF1007210B8 /* mavlink_msg_param_request_read.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_param_request_read.h; sourceTree = "<group>"; };
+		A9285D9A18F87FF1007210B8 /* mavlink_msg_param_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_param_set.h; sourceTree = "<group>"; };
+		A9285D9B18F87FF1007210B8 /* mavlink_msg_param_value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_param_value.h; sourceTree = "<group>"; };
+		A9285D9C18F87FF1007210B8 /* mavlink_msg_ping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_ping.h; sourceTree = "<group>"; };
+		A9285D9D18F87FF1007210B8 /* mavlink_msg_power_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_power_status.h; sourceTree = "<group>"; };
+		A9285D9E18F87FF1007210B8 /* mavlink_msg_radio_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_radio_status.h; sourceTree = "<group>"; };
+		A9285D9F18F87FF1007210B8 /* mavlink_msg_raw_imu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_raw_imu.h; sourceTree = "<group>"; };
+		A9285DA018F87FF1007210B8 /* mavlink_msg_raw_pressure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_raw_pressure.h; sourceTree = "<group>"; };
+		A9285DA118F87FF1007210B8 /* mavlink_msg_rc_channels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_rc_channels.h; sourceTree = "<group>"; };
+		A9285DA218F87FF1007210B8 /* mavlink_msg_rc_channels_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_rc_channels_override.h; sourceTree = "<group>"; };
+		A9285DA318F87FF1007210B8 /* mavlink_msg_rc_channels_raw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_rc_channels_raw.h; sourceTree = "<group>"; };
+		A9285DA418F87FF1007210B8 /* mavlink_msg_rc_channels_scaled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_rc_channels_scaled.h; sourceTree = "<group>"; };
+		A9285DA518F87FF1007210B8 /* mavlink_msg_request_data_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_request_data_stream.h; sourceTree = "<group>"; };
+		A9285DA618F87FF1007210B8 /* mavlink_msg_roll_pitch_yaw_rates_thrust_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_roll_pitch_yaw_rates_thrust_setpoint.h; sourceTree = "<group>"; };
+		A9285DA718F87FF1007210B8 /* mavlink_msg_roll_pitch_yaw_speed_thrust_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_roll_pitch_yaw_speed_thrust_setpoint.h; sourceTree = "<group>"; };
+		A9285DA818F87FF1007210B8 /* mavlink_msg_roll_pitch_yaw_thrust_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_roll_pitch_yaw_thrust_setpoint.h; sourceTree = "<group>"; };
+		A9285DA918F87FF1007210B8 /* mavlink_msg_safety_allowed_area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_safety_allowed_area.h; sourceTree = "<group>"; };
+		A9285DAA18F87FF1007210B8 /* mavlink_msg_safety_set_allowed_area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_safety_set_allowed_area.h; sourceTree = "<group>"; };
+		A9285DAB18F87FF1007210B8 /* mavlink_msg_scaled_imu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_scaled_imu.h; sourceTree = "<group>"; };
+		A9285DAC18F87FF1007210B8 /* mavlink_msg_scaled_imu2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_scaled_imu2.h; sourceTree = "<group>"; };
+		A9285DAD18F87FF1007210B8 /* mavlink_msg_scaled_pressure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_scaled_pressure.h; sourceTree = "<group>"; };
+		A9285DAE18F87FF1007210B8 /* mavlink_msg_servo_output_raw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_servo_output_raw.h; sourceTree = "<group>"; };
+		A9285DAF18F87FF1007210B8 /* mavlink_msg_set_global_position_setpoint_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_global_position_setpoint_int.h; sourceTree = "<group>"; };
+		A9285DB018F87FF1007210B8 /* mavlink_msg_set_gps_global_origin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_gps_global_origin.h; sourceTree = "<group>"; };
+		A9285DB118F87FF1007210B8 /* mavlink_msg_set_local_position_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_local_position_setpoint.h; sourceTree = "<group>"; };
+		A9285DB218F87FF1007210B8 /* mavlink_msg_set_mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_mode.h; sourceTree = "<group>"; };
+		A9285DB318F87FF1007210B8 /* mavlink_msg_set_quad_motors_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_quad_motors_setpoint.h; sourceTree = "<group>"; };
+		A9285DB418F87FF1007210B8 /* mavlink_msg_set_quad_swarm_led_roll_pitch_yaw_thrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_quad_swarm_led_roll_pitch_yaw_thrust.h; sourceTree = "<group>"; };
+		A9285DB518F87FF1007210B8 /* mavlink_msg_set_quad_swarm_roll_pitch_yaw_thrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_quad_swarm_roll_pitch_yaw_thrust.h; sourceTree = "<group>"; };
+		A9285DB618F87FF1007210B8 /* mavlink_msg_set_roll_pitch_yaw_speed_thrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_roll_pitch_yaw_speed_thrust.h; sourceTree = "<group>"; };
+		A9285DB718F87FF1007210B8 /* mavlink_msg_set_roll_pitch_yaw_thrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_roll_pitch_yaw_thrust.h; sourceTree = "<group>"; };
+		A9285DB818F87FF1007210B8 /* mavlink_msg_setpoint_6dof.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_setpoint_6dof.h; sourceTree = "<group>"; };
+		A9285DB918F87FF1007210B8 /* mavlink_msg_setpoint_8dof.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_setpoint_8dof.h; sourceTree = "<group>"; };
+		A9285DBA18F87FF1007210B8 /* mavlink_msg_sim_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_sim_state.h; sourceTree = "<group>"; };
+		A9285DBB18F87FF1007210B8 /* mavlink_msg_state_correction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_state_correction.h; sourceTree = "<group>"; };
+		A9285DBC18F87FF1007210B8 /* mavlink_msg_statustext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_statustext.h; sourceTree = "<group>"; };
+		A9285DBD18F87FF1007210B8 /* mavlink_msg_sys_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_sys_status.h; sourceTree = "<group>"; };
+		A9285DBE18F87FF1007210B8 /* mavlink_msg_system_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_system_time.h; sourceTree = "<group>"; };
+		A9285DBF18F87FF1007210B8 /* mavlink_msg_vfr_hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_vfr_hud.h; sourceTree = "<group>"; };
+		A9285DC018F87FF1007210B8 /* mavlink_msg_vicon_position_estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_vicon_position_estimate.h; sourceTree = "<group>"; };
+		A9285DC118F87FF1007210B8 /* mavlink_msg_vision_position_estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_vision_position_estimate.h; sourceTree = "<group>"; };
+		A9285DC218F87FF1007210B8 /* mavlink_msg_vision_speed_estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_vision_speed_estimate.h; sourceTree = "<group>"; };
+		A9285DC318F87FF1007210B8 /* testsuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testsuite.h; sourceTree = "<group>"; };
+		A9285DC418F87FF1007210B8 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		A9285DC518F87FF1007210B8 /* mavlink_conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_conversions.h; sourceTree = "<group>"; };
+		A9285DC618F87FF1007210B8 /* mavlink_helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_helpers.h; sourceTree = "<group>"; };
+		A9285DC718F87FF1007210B8 /* mavlink_protobuf_manager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mavlink_protobuf_manager.hpp; sourceTree = "<group>"; };
+		A9285DC818F87FF1007210B8 /* mavlink_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_types.h; sourceTree = "<group>"; };
+		A9285DCA18F87FF1007210B8 /* mavlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink.h; sourceTree = "<group>"; };
+		A9285DCB18F87FF1007210B8 /* mavlink_msg_attitude_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_attitude_control.h; sourceTree = "<group>"; };
+		A9285DCC18F87FF1007210B8 /* mavlink_msg_brief_feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_brief_feature.h; sourceTree = "<group>"; };
+		A9285DCD18F87FF1007210B8 /* mavlink_msg_image_available.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_image_available.h; sourceTree = "<group>"; };
+		A9285DCE18F87FF1007210B8 /* mavlink_msg_image_trigger_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_image_trigger_control.h; sourceTree = "<group>"; };
+		A9285DCF18F87FF1007210B8 /* mavlink_msg_image_triggered.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_image_triggered.h; sourceTree = "<group>"; };
+		A9285DD018F87FF1007210B8 /* mavlink_msg_marker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_marker.h; sourceTree = "<group>"; };
+		A9285DD118F87FF1007210B8 /* mavlink_msg_pattern_detected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_pattern_detected.h; sourceTree = "<group>"; };
+		A9285DD218F87FF1007210B8 /* mavlink_msg_point_of_interest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_point_of_interest.h; sourceTree = "<group>"; };
+		A9285DD318F87FF1007210B8 /* mavlink_msg_point_of_interest_connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_point_of_interest_connection.h; sourceTree = "<group>"; };
+		A9285DD418F87FF1007210B8 /* mavlink_msg_position_control_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_position_control_setpoint.h; sourceTree = "<group>"; };
+		A9285DD518F87FF1007210B8 /* mavlink_msg_raw_aux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_raw_aux.h; sourceTree = "<group>"; };
+		A9285DD618F87FF1007210B8 /* mavlink_msg_set_cam_shutter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_cam_shutter.h; sourceTree = "<group>"; };
+		A9285DD718F87FF1007210B8 /* mavlink_msg_set_position_control_offset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_position_control_offset.h; sourceTree = "<group>"; };
+		A9285DD818F87FF1007210B8 /* mavlink_msg_watchdog_command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_watchdog_command.h; sourceTree = "<group>"; };
+		A9285DD918F87FF1007210B8 /* mavlink_msg_watchdog_heartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_watchdog_heartbeat.h; sourceTree = "<group>"; };
+		A9285DDA18F87FF1007210B8 /* mavlink_msg_watchdog_process_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_watchdog_process_info.h; sourceTree = "<group>"; };
+		A9285DDB18F87FF1007210B8 /* mavlink_msg_watchdog_process_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_watchdog_process_status.h; sourceTree = "<group>"; };
+		A9285DDC18F87FF1007210B8 /* pixhawk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixhawk.h; sourceTree = "<group>"; };
+		A9285DDD18F87FF1007210B8 /* pixhawk.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixhawk.pb.h; sourceTree = "<group>"; };
+		A9285DDE18F87FF1007210B8 /* testsuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testsuite.h; sourceTree = "<group>"; };
+		A9285DDF18F87FF1007210B8 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		A9285DE018F87FF1007210B8 /* protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = protocol.h; sourceTree = "<group>"; };
+		A9285DE518F87FFA007210B8 /* led_circle_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = led_circle_green.png; sourceTree = "<group>"; };
+		A9285DE618F87FFA007210B8 /* led_circle_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = led_circle_grey.png; sourceTree = "<group>"; };
+		A9285DE718F87FFA007210B8 /* led_circle_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = led_circle_red.png; sourceTree = "<group>"; };
+		A9285DE818F87FFA007210B8 /* mavlink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mavlink.png; sourceTree = "<group>"; };
+		A9285DE918F87FFA007210B8 /* mavlink_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mavlink_120.png; sourceTree = "<group>"; };
+		A9285DEA18F87FFA007210B8 /* mavlink_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mavlink_58.png; sourceTree = "<group>"; };
+		A9285DEB18F87FFA007210B8 /* mavlink_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mavlink_80.png; sourceTree = "<group>"; };
+		A9285DFB18F88006007210B8 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		A9285DFC18F88006007210B8 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		A9285DFE18F880A4007210B8 /* PersistentDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentDataStore.h; sourceTree = "<group>"; };
+		A9285DFF18F880A4007210B8 /* PersistentDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentDataStore.m; sourceTree = "<group>"; };
+		A9286DB21922ADFC003A2A92 /* GPSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSHelper.h; sourceTree = "<group>"; };
+		A9286DB31922ADFC003A2A92 /* GPSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSHelper.m; sourceTree = "<group>"; };
+		A92A45EC1905B8CF00F1617B /* 19-gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-gear.png"; sourceTree = "<group>"; };
+		A92A45ED1905B8CF00F1617B /* 28-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "28-star.png"; sourceTree = "<group>"; };
+		A92A45F01905B9D300F1617B /* MAVHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAVHelper.h; sourceTree = "<group>"; };
+		A92A45F11905B9D300F1617B /* MAVHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAVHelper.m; sourceTree = "<group>"; };
+		A92A45F31905BE8000F1617B /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		A92C33AD19327183001AA9CD /* CalibrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationViewController.h; sourceTree = "<group>"; };
+		A92C33AE19327183001AA9CD /* CalibrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalibrationViewController.m; sourceTree = "<group>"; };
+		A93748EF19081803004F7E57 /* px4-ack.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "px4-ack.aif"; sourceTree = "<group>"; };
+		A93748F119081812004F7E57 /* px4-boot.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "px4-boot.aif"; sourceTree = "<group>"; };
+		A9FCA1D81903F74100E54FFF /* ConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationViewController.h; sourceTree = "<group>"; };
+		A9FCA1D91903F74100E54FFF /* ConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationViewController.m; sourceTree = "<group>"; };
+		A9FCA1DB1904475D00E54FFF /* MAVTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAVTableViewCell.h; sourceTree = "<group>"; };
+		A9FCA1DC1904475D00E54FFF /* MAVTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAVTableViewCell.m; sourceTree = "<group>"; };
+		A9FCA1DD1904475D00E54FFF /* MAVTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MAVTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9285CE818F87E49007210B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9285D2D18F87E7B007210B8 /* AVFoundation.framework in Frameworks */,
+				A9285D2B18F87E6A007210B8 /* CoreMotion.framework in Frameworks */,
+				A9285D2918F87E62007210B8 /* CoreLocation.framework in Frameworks */,
+				A9285D2718F87E58007210B8 /* CFNetwork.framework in Frameworks */,
+				A9285CF118F87E49007210B8 /* CoreGraphics.framework in Frameworks */,
+				A9285CF318F87E49007210B8 /* UIKit.framework in Frameworks */,
+				A9285CEF18F87E49007210B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9285D0C18F87E4A007210B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9285D1118F87E4A007210B8 /* XCTest.framework in Frameworks */,
+				A9285D1318F87E4A007210B8 /* UIKit.framework in Frameworks */,
+				A9285D1218F87E4A007210B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9285CE218F87E49007210B8 = {
+			isa = PBXGroup;
+			children = (
+				A9285CF418F87E49007210B8 /* MAVLinkFollowMe */,
+				A9285D1618F87E4A007210B8 /* MAVLinkFollowMeTests */,
+				A9285CED18F87E49007210B8 /* Frameworks */,
+				A9285CEC18F87E49007210B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9285CEC18F87E49007210B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9285CEB18F87E49007210B8 /* MAVLinkFollowMe.app */,
+				A9285D0F18F87E4A007210B8 /* MAVLinkFollowMeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9285CED18F87E49007210B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9285D2C18F87E7B007210B8 /* AVFoundation.framework */,
+				A9285D2A18F87E6A007210B8 /* CoreMotion.framework */,
+				A9285D2818F87E62007210B8 /* CoreLocation.framework */,
+				A9285D2618F87E58007210B8 /* CFNetwork.framework */,
+				A9285CEE18F87E49007210B8 /* Foundation.framework */,
+				A9285CF018F87E49007210B8 /* CoreGraphics.framework */,
+				A9285CF218F87E49007210B8 /* UIKit.framework */,
+				A9285D1018F87E4A007210B8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9285CF418F87E49007210B8 /* MAVLinkFollowMe */ = {
+			isa = PBXGroup;
+			children = (
+				A9285DFA18F88006007210B8 /* classes */,
+				A9285DE318F87FFA007210B8 /* assets */,
+				A9285D2E18F87FF0007210B8 /* 3thparty */,
+				A9285CFD18F87E49007210B8 /* AppDelegate.h */,
+				A9285CFE18F87E49007210B8 /* AppDelegate.m */,
+				A9285D0018F87E49007210B8 /* Main.storyboard */,
+				A9285D0918F87E49007210B8 /* Images.xcassets */,
+				A9285CF518F87E49007210B8 /* Supporting Files */,
+				A9113E3218F955B60082FFFC /* FollowMEViewController.h */,
+				A9113E3318F955B60082FFFC /* FollowMEViewController.m */,
+				A9FCA1D81903F74100E54FFF /* ConfigurationViewController.h */,
+				A9FCA1D91903F74100E54FFF /* ConfigurationViewController.m */,
+				A9FCA1DB1904475D00E54FFF /* MAVTableViewCell.h */,
+				A9FCA1DC1904475D00E54FFF /* MAVTableViewCell.m */,
+				A9FCA1DD1904475D00E54FFF /* MAVTableViewCell.xib */,
+				A92C33AD19327183001AA9CD /* CalibrationViewController.h */,
+				A92C33AE19327183001AA9CD /* CalibrationViewController.m */,
+			);
+			path = MAVLinkFollowMe;
+			sourceTree = "<group>";
+		};
+		A9285CF518F87E49007210B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A93748EE190817CD004F7E57 /* Sounds */,
+				A9285CF618F87E49007210B8 /* MAVLinkFollowMe-Info.plist */,
+				A9285CF718F87E49007210B8 /* InfoPlist.strings */,
+				A9285CFA18F87E49007210B8 /* main.m */,
+				A9285CFC18F87E49007210B8 /* MAVLinkFollowMe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9285D1618F87E4A007210B8 /* MAVLinkFollowMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9285D1C18F87E4A007210B8 /* MAVLinkFollowMeTests.m */,
+				A9285D1718F87E4A007210B8 /* Supporting Files */,
+			);
+			path = MAVLinkFollowMeTests;
+			sourceTree = "<group>";
+		};
+		A9285D1718F87E4A007210B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9285D1818F87E4A007210B8 /* MAVLinkFollowMeTests-Info.plist */,
+				A9285D1918F87E4A007210B8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9285D2E18F87FF0007210B8 /* 3thparty */ = {
+			isa = PBXGroup;
+			children = (
+				A9285D2F18F87FF0007210B8 /* CocoaAsyncSocket */,
+				A9285D3418F87FF0007210B8 /* mavlink */,
+			);
+			path = 3thparty;
+			sourceTree = "<group>";
+		};
+		A9285D2F18F87FF0007210B8 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				A9285D3018F87FF0007210B8 /* GCDAsyncSocket.h */,
+				A9285D3118F87FF0007210B8 /* GCDAsyncSocket.m */,
+				A9285D3218F87FF0007210B8 /* GCDAsyncUdpSocket.h */,
+				A9285D3318F87FF0007210B8 /* GCDAsyncUdpSocket.m */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		A9285D3418F87FF0007210B8 /* mavlink */ = {
+			isa = PBXGroup;
+			children = (
+				A9285D3518F87FF0007210B8 /* v1.0 */,
+			);
+			path = mavlink;
+			sourceTree = "<group>";
+		};
+		A9285D3518F87FF0007210B8 /* v1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				A9285D3618F87FF0007210B8 /* ardupilotmega */,
+				A9285D5718F87FF0007210B8 /* checksum.h */,
+				A9285D5818F87FF0007210B8 /* common */,
+				A9285DC518F87FF1007210B8 /* mavlink_conversions.h */,
+				A9285DC618F87FF1007210B8 /* mavlink_helpers.h */,
+				A9285DC718F87FF1007210B8 /* mavlink_protobuf_manager.hpp */,
+				A9285DC818F87FF1007210B8 /* mavlink_types.h */,
+				A9285DC918F87FF1007210B8 /* pixhawk */,
+				A9285DE018F87FF1007210B8 /* protocol.h */,
+			);
+			path = v1.0;
+			sourceTree = "<group>";
+		};
+		A9285D3618F87FF0007210B8 /* ardupilotmega */ = {
+			isa = PBXGroup;
+			children = (
+				A9285D3718F87FF0007210B8 /* ardupilotmega.h */,
+				A9285D3818F87FF0007210B8 /* mavlink.h */,
+				A9285D3918F87FF0007210B8 /* mavlink_msg_ahrs.h */,
+				A9285D3A18F87FF0007210B8 /* mavlink_msg_ahrs2.h */,
+				A9285D3B18F87FF0007210B8 /* mavlink_msg_airspeed_autocal.h */,
+				A9285D3C18F87FF0007210B8 /* mavlink_msg_ap_adc.h */,
+				A9285D3D18F87FF0007210B8 /* mavlink_msg_compassmot_status.h */,
+				A9285D3E18F87FF0007210B8 /* mavlink_msg_data16.h */,
+				A9285D3F18F87FF0007210B8 /* mavlink_msg_data32.h */,
+				A9285D4018F87FF0007210B8 /* mavlink_msg_data64.h */,
+				A9285D4118F87FF0007210B8 /* mavlink_msg_data96.h */,
+				A9285D4218F87FF0007210B8 /* mavlink_msg_digicam_configure.h */,
+				A9285D4318F87FF0007210B8 /* mavlink_msg_digicam_control.h */,
+				A9285D4418F87FF0007210B8 /* mavlink_msg_fence_fetch_point.h */,
+				A9285D4518F87FF0007210B8 /* mavlink_msg_fence_point.h */,
+				A9285D4618F87FF0007210B8 /* mavlink_msg_fence_status.h */,
+				A9285D4718F87FF0007210B8 /* mavlink_msg_hwstatus.h */,
+				A9285D4818F87FF0007210B8 /* mavlink_msg_limits_status.h */,
+				A9285D4918F87FF0007210B8 /* mavlink_msg_meminfo.h */,
+				A9285D4A18F87FF0007210B8 /* mavlink_msg_mount_configure.h */,
+				A9285D4B18F87FF0007210B8 /* mavlink_msg_mount_control.h */,
+				A9285D4C18F87FF0007210B8 /* mavlink_msg_mount_status.h */,
+				A9285D4D18F87FF0007210B8 /* mavlink_msg_radio.h */,
+				A9285D4E18F87FF0007210B8 /* mavlink_msg_rally_fetch_point.h */,
+				A9285D4F18F87FF0007210B8 /* mavlink_msg_rally_point.h */,
+				A9285D5018F87FF0007210B8 /* mavlink_msg_rangefinder.h */,
+				A9285D5118F87FF0007210B8 /* mavlink_msg_sensor_offsets.h */,
+				A9285D5218F87FF0007210B8 /* mavlink_msg_set_mag_offsets.h */,
+				A9285D5318F87FF0007210B8 /* mavlink_msg_simstate.h */,
+				A9285D5418F87FF0007210B8 /* mavlink_msg_wind.h */,
+				A9285D5518F87FF0007210B8 /* testsuite.h */,
+				A9285D5618F87FF0007210B8 /* version.h */,
+			);
+			path = ardupilotmega;
+			sourceTree = "<group>";
+		};
+		A9285D5818F87FF0007210B8 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A9285D5918F87FF0007210B8 /* common.h */,
+				A9285D5A18F87FF0007210B8 /* mavlink.h */,
+				A9285D5B18F87FF0007210B8 /* mavlink_msg_attitude.h */,
+				A9285D5C18F87FF0007210B8 /* mavlink_msg_attitude_quaternion.h */,
+				A9285D5D18F87FF0007210B8 /* mavlink_msg_auth_key.h */,
+				A9285D5E18F87FF0007210B8 /* mavlink_msg_battery_status.h */,
+				A9285D5F18F87FF0007210B8 /* mavlink_msg_change_operator_control.h */,
+				A9285D6018F87FF0007210B8 /* mavlink_msg_change_operator_control_ack.h */,
+				A9285D6118F87FF0007210B8 /* mavlink_msg_command_ack.h */,
+				A9285D6218F87FF0007210B8 /* mavlink_msg_command_long.h */,
+				A9285D6318F87FF0007210B8 /* mavlink_msg_data_stream.h */,
+				A9285D6418F87FF0007210B8 /* mavlink_msg_data_transmission_handshake.h */,
+				A9285D6518F87FF0007210B8 /* mavlink_msg_debug.h */,
+				A9285D6618F87FF0007210B8 /* mavlink_msg_debug_vect.h */,
+				A9285D6718F87FF0007210B8 /* mavlink_msg_encapsulated_data.h */,
+				A9285D6818F87FF0007210B8 /* mavlink_msg_file_transfer_dir_list.h */,
+				A9285D6918F87FF0007210B8 /* mavlink_msg_file_transfer_res.h */,
+				A9285D6A18F87FF0007210B8 /* mavlink_msg_file_transfer_start.h */,
+				A9285D6B18F87FF1007210B8 /* mavlink_msg_global_position_int.h */,
+				A9285D6C18F87FF1007210B8 /* mavlink_msg_global_position_setpoint_int.h */,
+				A9285D6D18F87FF1007210B8 /* mavlink_msg_global_vision_position_estimate.h */,
+				A9285D6E18F87FF1007210B8 /* mavlink_msg_gps2_raw.h */,
+				A9285D6F18F87FF1007210B8 /* mavlink_msg_gps_global_origin.h */,
+				A9285D7018F87FF1007210B8 /* mavlink_msg_gps_inject_data.h */,
+				A9285D7118F87FF1007210B8 /* mavlink_msg_gps_raw_int.h */,
+				A9285D7218F87FF1007210B8 /* mavlink_msg_gps_status.h */,
+				A9285D7318F87FF1007210B8 /* mavlink_msg_heartbeat.h */,
+				A9285D7418F87FF1007210B8 /* mavlink_msg_highres_imu.h */,
+				A9285D7518F87FF1007210B8 /* mavlink_msg_hil_controls.h */,
+				A9285D7618F87FF1007210B8 /* mavlink_msg_hil_gps.h */,
+				A9285D7718F87FF1007210B8 /* mavlink_msg_hil_optical_flow.h */,
+				A9285D7818F87FF1007210B8 /* mavlink_msg_hil_rc_inputs_raw.h */,
+				A9285D7918F87FF1007210B8 /* mavlink_msg_hil_sensor.h */,
+				A9285D7A18F87FF1007210B8 /* mavlink_msg_hil_state.h */,
+				A9285D7B18F87FF1007210B8 /* mavlink_msg_hil_state_quaternion.h */,
+				A9285D7C18F87FF1007210B8 /* mavlink_msg_local_position_ned.h */,
+				A9285D7D18F87FF1007210B8 /* mavlink_msg_local_position_ned_system_global_offset.h */,
+				A9285D7E18F87FF1007210B8 /* mavlink_msg_local_position_setpoint.h */,
+				A9285D7F18F87FF1007210B8 /* mavlink_msg_log_data.h */,
+				A9285D8018F87FF1007210B8 /* mavlink_msg_log_entry.h */,
+				A9285D8118F87FF1007210B8 /* mavlink_msg_log_erase.h */,
+				A9285D8218F87FF1007210B8 /* mavlink_msg_log_request_data.h */,
+				A9285D8318F87FF1007210B8 /* mavlink_msg_log_request_end.h */,
+				A9285D8418F87FF1007210B8 /* mavlink_msg_log_request_list.h */,
+				A9285D8518F87FF1007210B8 /* mavlink_msg_manual_control.h */,
+				A9285D8618F87FF1007210B8 /* mavlink_msg_manual_setpoint.h */,
+				A9285D8718F87FF1007210B8 /* mavlink_msg_memory_vect.h */,
+				A9285D8818F87FF1007210B8 /* mavlink_msg_mission_ack.h */,
+				A9285D8918F87FF1007210B8 /* mavlink_msg_mission_clear_all.h */,
+				A9285D8A18F87FF1007210B8 /* mavlink_msg_mission_count.h */,
+				A9285D8B18F87FF1007210B8 /* mavlink_msg_mission_current.h */,
+				A9285D8C18F87FF1007210B8 /* mavlink_msg_mission_item.h */,
+				A9285D8D18F87FF1007210B8 /* mavlink_msg_mission_item_reached.h */,
+				A9285D8E18F87FF1007210B8 /* mavlink_msg_mission_request.h */,
+				A9285D8F18F87FF1007210B8 /* mavlink_msg_mission_request_list.h */,
+				A9285D9018F87FF1007210B8 /* mavlink_msg_mission_request_partial_list.h */,
+				A9285D9118F87FF1007210B8 /* mavlink_msg_mission_set_current.h */,
+				A9285D9218F87FF1007210B8 /* mavlink_msg_mission_write_partial_list.h */,
+				A9285D9318F87FF1007210B8 /* mavlink_msg_named_value_float.h */,
+				A9285D9418F87FF1007210B8 /* mavlink_msg_named_value_int.h */,
+				A9285D9518F87FF1007210B8 /* mavlink_msg_nav_controller_output.h */,
+				A9285D9618F87FF1007210B8 /* mavlink_msg_omnidirectional_flow.h */,
+				A9285D9718F87FF1007210B8 /* mavlink_msg_optical_flow.h */,
+				A9285D9818F87FF1007210B8 /* mavlink_msg_param_request_list.h */,
+				A9285D9918F87FF1007210B8 /* mavlink_msg_param_request_read.h */,
+				A9285D9A18F87FF1007210B8 /* mavlink_msg_param_set.h */,
+				A9285D9B18F87FF1007210B8 /* mavlink_msg_param_value.h */,
+				A9285D9C18F87FF1007210B8 /* mavlink_msg_ping.h */,
+				A9285D9D18F87FF1007210B8 /* mavlink_msg_power_status.h */,
+				A9285D9E18F87FF1007210B8 /* mavlink_msg_radio_status.h */,
+				A9285D9F18F87FF1007210B8 /* mavlink_msg_raw_imu.h */,
+				A9285DA018F87FF1007210B8 /* mavlink_msg_raw_pressure.h */,
+				A9285DA118F87FF1007210B8 /* mavlink_msg_rc_channels.h */,
+				A9285DA218F87FF1007210B8 /* mavlink_msg_rc_channels_override.h */,
+				A9285DA318F87FF1007210B8 /* mavlink_msg_rc_channels_raw.h */,
+				A9285DA418F87FF1007210B8 /* mavlink_msg_rc_channels_scaled.h */,
+				A9285DA518F87FF1007210B8 /* mavlink_msg_request_data_stream.h */,
+				A9285DA618F87FF1007210B8 /* mavlink_msg_roll_pitch_yaw_rates_thrust_setpoint.h */,
+				A9285DA718F87FF1007210B8 /* mavlink_msg_roll_pitch_yaw_speed_thrust_setpoint.h */,
+				A9285DA818F87FF1007210B8 /* mavlink_msg_roll_pitch_yaw_thrust_setpoint.h */,
+				A9285DA918F87FF1007210B8 /* mavlink_msg_safety_allowed_area.h */,
+				A9285DAA18F87FF1007210B8 /* mavlink_msg_safety_set_allowed_area.h */,
+				A9285DAB18F87FF1007210B8 /* mavlink_msg_scaled_imu.h */,
+				A9285DAC18F87FF1007210B8 /* mavlink_msg_scaled_imu2.h */,
+				A9285DAD18F87FF1007210B8 /* mavlink_msg_scaled_pressure.h */,
+				A9285DAE18F87FF1007210B8 /* mavlink_msg_servo_output_raw.h */,
+				A9285DAF18F87FF1007210B8 /* mavlink_msg_set_global_position_setpoint_int.h */,
+				A9285DB018F87FF1007210B8 /* mavlink_msg_set_gps_global_origin.h */,
+				A9285DB118F87FF1007210B8 /* mavlink_msg_set_local_position_setpoint.h */,
+				A9285DB218F87FF1007210B8 /* mavlink_msg_set_mode.h */,
+				A9285DB318F87FF1007210B8 /* mavlink_msg_set_quad_motors_setpoint.h */,
+				A9285DB418F87FF1007210B8 /* mavlink_msg_set_quad_swarm_led_roll_pitch_yaw_thrust.h */,
+				A9285DB518F87FF1007210B8 /* mavlink_msg_set_quad_swarm_roll_pitch_yaw_thrust.h */,
+				A9285DB618F87FF1007210B8 /* mavlink_msg_set_roll_pitch_yaw_speed_thrust.h */,
+				A9285DB718F87FF1007210B8 /* mavlink_msg_set_roll_pitch_yaw_thrust.h */,
+				A9285DB818F87FF1007210B8 /* mavlink_msg_setpoint_6dof.h */,
+				A9285DB918F87FF1007210B8 /* mavlink_msg_setpoint_8dof.h */,
+				A9285DBA18F87FF1007210B8 /* mavlink_msg_sim_state.h */,
+				A9285DBB18F87FF1007210B8 /* mavlink_msg_state_correction.h */,
+				A9285DBC18F87FF1007210B8 /* mavlink_msg_statustext.h */,
+				A9285DBD18F87FF1007210B8 /* mavlink_msg_sys_status.h */,
+				A9285DBE18F87FF1007210B8 /* mavlink_msg_system_time.h */,
+				A9285DBF18F87FF1007210B8 /* mavlink_msg_vfr_hud.h */,
+				A9285DC018F87FF1007210B8 /* mavlink_msg_vicon_position_estimate.h */,
+				A9285DC118F87FF1007210B8 /* mavlink_msg_vision_position_estimate.h */,
+				A9285DC218F87FF1007210B8 /* mavlink_msg_vision_speed_estimate.h */,
+				A9285DC318F87FF1007210B8 /* testsuite.h */,
+				A9285DC418F87FF1007210B8 /* version.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		A9285DC918F87FF1007210B8 /* pixhawk */ = {
+			isa = PBXGroup;
+			children = (
+				A9285DCA18F87FF1007210B8 /* mavlink.h */,
+				A9285DCB18F87FF1007210B8 /* mavlink_msg_attitude_control.h */,
+				A9285DCC18F87FF1007210B8 /* mavlink_msg_brief_feature.h */,
+				A9285DCD18F87FF1007210B8 /* mavlink_msg_image_available.h */,
+				A9285DCE18F87FF1007210B8 /* mavlink_msg_image_trigger_control.h */,
+				A9285DCF18F87FF1007210B8 /* mavlink_msg_image_triggered.h */,
+				A9285DD018F87FF1007210B8 /* mavlink_msg_marker.h */,
+				A9285DD118F87FF1007210B8 /* mavlink_msg_pattern_detected.h */,
+				A9285DD218F87FF1007210B8 /* mavlink_msg_point_of_interest.h */,
+				A9285DD318F87FF1007210B8 /* mavlink_msg_point_of_interest_connection.h */,
+				A9285DD418F87FF1007210B8 /* mavlink_msg_position_control_setpoint.h */,
+				A9285DD518F87FF1007210B8 /* mavlink_msg_raw_aux.h */,
+				A9285DD618F87FF1007210B8 /* mavlink_msg_set_cam_shutter.h */,
+				A9285DD718F87FF1007210B8 /* mavlink_msg_set_position_control_offset.h */,
+				A9285DD818F87FF1007210B8 /* mavlink_msg_watchdog_command.h */,
+				A9285DD918F87FF1007210B8 /* mavlink_msg_watchdog_heartbeat.h */,
+				A9285DDA18F87FF1007210B8 /* mavlink_msg_watchdog_process_info.h */,
+				A9285DDB18F87FF1007210B8 /* mavlink_msg_watchdog_process_status.h */,
+				A9285DDC18F87FF1007210B8 /* pixhawk.h */,
+				A9285DDD18F87FF1007210B8 /* pixhawk.pb.h */,
+				A9285DDE18F87FF1007210B8 /* testsuite.h */,
+				A9285DDF18F87FF1007210B8 /* version.h */,
+			);
+			path = pixhawk;
+			sourceTree = "<group>";
+		};
+		A9285DE318F87FFA007210B8 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				A9285DE418F87FFA007210B8 /* images */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		A9285DE418F87FFA007210B8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A92A45F31905BE8000F1617B /* blank.png */,
+				A92A45EC1905B8CF00F1617B /* 19-gear.png */,
+				A92A45ED1905B8CF00F1617B /* 28-star.png */,
+				A907C0D61905569A00BB5819 /* apm.png */,
+				A907C0D71905569A00BB5819 /* px4.png */,
+				A9285DE518F87FFA007210B8 /* led_circle_green.png */,
+				A9285DE618F87FFA007210B8 /* led_circle_grey.png */,
+				A9285DE718F87FFA007210B8 /* led_circle_red.png */,
+				A9285DE818F87FFA007210B8 /* mavlink.png */,
+				A9285DE918F87FFA007210B8 /* mavlink_120.png */,
+				A9285DEA18F87FFA007210B8 /* mavlink_58.png */,
+				A9285DEB18F87FFA007210B8 /* mavlink_80.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A9285DFA18F88006007210B8 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				A9286DB21922ADFC003A2A92 /* GPSHelper.h */,
+				A9286DB31922ADFC003A2A92 /* GPSHelper.m */,
+				A916A29618FC692F00702545 /* MAV.h */,
+				A916A29718FC693000702545 /* MAV.m */,
+				A9285DFE18F880A4007210B8 /* PersistentDataStore.h */,
+				A9285DFF18F880A4007210B8 /* PersistentDataStore.m */,
+				A9285DFB18F88006007210B8 /* DataModel.h */,
+				A9285DFC18F88006007210B8 /* DataModel.m */,
+				A92A45F01905B9D300F1617B /* MAVHelper.h */,
+				A92A45F11905B9D300F1617B /* MAVHelper.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		A93748EE190817CD004F7E57 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A93748F119081812004F7E57 /* px4-boot.aif */,
+				A93748EF19081803004F7E57 /* px4-ack.aif */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9285CEA18F87E49007210B8 /* MAVLinkFollowMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9285D2018F87E4A007210B8 /* Build configuration list for PBXNativeTarget "MAVLinkFollowMe" */;
+			buildPhases = (
+				A9285CE718F87E49007210B8 /* Sources */,
+				A9285CE818F87E49007210B8 /* Frameworks */,
+				A9285CE918F87E49007210B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MAVLinkFollowMe;
+			productName = MAVLinkFollowMe;
+			productReference = A9285CEB18F87E49007210B8 /* MAVLinkFollowMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9285D0E18F87E4A007210B8 /* MAVLinkFollowMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9285D2318F87E4A007210B8 /* Build configuration list for PBXNativeTarget "MAVLinkFollowMeTests" */;
+			buildPhases = (
+				A9285D0B18F87E4A007210B8 /* Sources */,
+				A9285D0C18F87E4A007210B8 /* Frameworks */,
+				A9285D0D18F87E4A007210B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9285D1518F87E4A007210B8 /* PBXTargetDependency */,
+			);
+			name = MAVLinkFollowMeTests;
+			productName = MAVLinkFollowMeTests;
+			productReference = A9285D0F18F87E4A007210B8 /* MAVLinkFollowMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9285CE318F87E49007210B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = de.wtns;
+				TargetAttributes = {
+					A9285CEA18F87E49007210B8 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					A9285D0E18F87E4A007210B8 = {
+						TestTargetID = A9285CEA18F87E49007210B8;
+					};
+				};
+			};
+			buildConfigurationList = A9285CE618F87E49007210B8 /* Build configuration list for PBXProject "MAVLinkFollowMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9285CE218F87E49007210B8;
+			productRefGroup = A9285CEC18F87E49007210B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9285CEA18F87E49007210B8 /* MAVLinkFollowMe */,
+				A9285D0E18F87E4A007210B8 /* MAVLinkFollowMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9285CE918F87E49007210B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A907C0D81905569A00BB5819 /* apm.png in Resources */,
+				A92A45EE1905B8CF00F1617B /* 19-gear.png in Resources */,
+				A9285DF618F87FFA007210B8 /* mavlink_80.png in Resources */,
+				A9285DF518F87FFA007210B8 /* mavlink_58.png in Resources */,
+				A9FCA1DF1904475D00E54FFF /* MAVTableViewCell.xib in Resources */,
+				A907C0D91905569A00BB5819 /* px4.png in Resources */,
+				A93748F019081803004F7E57 /* px4-ack.aif in Resources */,
+				A93748F219081812004F7E57 /* px4-boot.aif in Resources */,
+				A9285DF118F87FFA007210B8 /* led_circle_grey.png in Resources */,
+				A9285D0A18F87E49007210B8 /* Images.xcassets in Resources */,
+				A9285DF018F87FFA007210B8 /* led_circle_green.png in Resources */,
+				A92A45EF1905B8CF00F1617B /* 28-star.png in Resources */,
+				A9285DF318F87FFA007210B8 /* mavlink.png in Resources */,
+				A92A45F41905BE8000F1617B /* blank.png in Resources */,
+				A9285CF918F87E49007210B8 /* InfoPlist.strings in Resources */,
+				A9285D0218F87E49007210B8 /* Main.storyboard in Resources */,
+				A9285DF418F87FFA007210B8 /* mavlink_120.png in Resources */,
+				A9285DF218F87FFA007210B8 /* led_circle_red.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9285D0D18F87E4A007210B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9285D1B18F87E4A007210B8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9285CE718F87E49007210B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9285E0018F880A4007210B8 /* PersistentDataStore.m in Sources */,
+				A9FCA1DE1904475D00E54FFF /* MAVTableViewCell.m in Sources */,
+				A92C33AF19327183001AA9CD /* CalibrationViewController.m in Sources */,
+				A9285DE118F87FF1007210B8 /* GCDAsyncSocket.m in Sources */,
+				A916A29818FC693000702545 /* MAV.m in Sources */,
+				A9286DB41922ADFC003A2A92 /* GPSHelper.m in Sources */,
+				A9285CFF18F87E49007210B8 /* AppDelegate.m in Sources */,
+				A9285DFD18F88006007210B8 /* DataModel.m in Sources */,
+				A9113E3418F955B60082FFFC /* FollowMEViewController.m in Sources */,
+				A9285DE218F87FF1007210B8 /* GCDAsyncUdpSocket.m in Sources */,
+				A92A45F21905B9D300F1617B /* MAVHelper.m in Sources */,
+				A9285CFB18F87E49007210B8 /* main.m in Sources */,
+				A9FCA1DA1903F74100E54FFF /* ConfigurationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9285D0B18F87E4A007210B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9285D1D18F87E4A007210B8 /* MAVLinkFollowMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9285D1518F87E4A007210B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9285CEA18F87E49007210B8 /* MAVLinkFollowMe */;
+			targetProxy = A9285D1418F87E4A007210B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9285CF718F87E49007210B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9285CF818F87E49007210B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9285D0018F87E49007210B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9285D0118F87E49007210B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9285D1918F87E4A007210B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9285D1A18F87E4A007210B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9285D1E18F87E4A007210B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A9285D1F18F87E4A007210B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9285D2118F87E4A007210B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MAVLinkFollowMe/MAVLinkFollowMe-Prefix.pch";
+				INFOPLIST_FILE = "MAVLinkFollowMe/MAVLinkFollowMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9285D2218F87E4A007210B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MAVLinkFollowMe/MAVLinkFollowMe-Prefix.pch";
+				INFOPLIST_FILE = "MAVLinkFollowMe/MAVLinkFollowMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9285D2418F87E4A007210B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MAVLinkFollowMe.app/MAVLinkFollowMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MAVLinkFollowMe/MAVLinkFollowMe-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MAVLinkFollowMeTests/MAVLinkFollowMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A9285D2518F87E4A007210B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MAVLinkFollowMe.app/MAVLinkFollowMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MAVLinkFollowMe/MAVLinkFollowMe-Prefix.pch";
+				INFOPLIST_FILE = "MAVLinkFollowMeTests/MAVLinkFollowMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9285CE618F87E49007210B8 /* Build configuration list for PBXProject "MAVLinkFollowMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9285D1E18F87E4A007210B8 /* Debug */,
+				A9285D1F18F87E4A007210B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9285D2018F87E4A007210B8 /* Build configuration list for PBXNativeTarget "MAVLinkFollowMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9285D2118F87E4A007210B8 /* Debug */,
+				A9285D2218F87E4A007210B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9285D2318F87E4A007210B8 /* Build configuration list for PBXNativeTarget "MAVLinkFollowMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9285D2418F87E4A007210B8 /* Debug */,
+				A9285D2518F87E4A007210B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9285CE318F87E49007210B8 /* Project object */;
+}
